@@ -58,19 +58,145 @@
                 </a>
             </div>
             <h2>Inscription</h2>
+            <form  class="formulaire">
+                <fieldset><legend>Obligatoire</legend>    
+                <div>
+                    <label for="Moali">Nom</label>
+                    <input id="Moali" type="text" placeholder="Moali">
+                </div>
+                <div>
+                    <label for="Abdel-Hamid">Prenom</label>
+                    <input id="Abdel-Hamid" type="text" placeholder="Abdel-Hamid">
+                </div>
+                <div>
+                    <label for="courriel">Courriel</label>
+                    <input id="courriel" type="email" placeholder="Entrez votre courriel">
+                </div>
+            </fieldset>
+            <fieldset><legend>Adresse complète</legend>   
+                <div>
+                    <label for="Canada">Pays</label>
+                    <input id="Canada" type="text" placeholder="Canada">
+                </div>
+                <div>
+                    <label for="Québec">Province</label>
+                    <input id="Québec" type="text" placeholder="Québec">
+                </div>
+                <div>
+                    <label for="rue">Rue</label>
+                    <input id="rue" type="text" placeholder="Entrez votre adresse civique">
+                </div>
+            
+            </fieldset>
+            
+                </form>
+                
         </div>
     </section>
- 
+
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tableau - TP2</title>
+</head>
+<body>
+
     <section id="Tableau">
         <div class="global">
             <div class="nav-icon">
-                <a class="Accueil" href="#">
- 
-                </a>
             </div>
-            <h2>Tableau</h2>
+            <h3>Tableau</h3>
+            <section class="tableau-container">
+                <table class="tableau">
+                    <caption>Horaire A2024</caption>
+                    <thead>
+                        <tr>
+                            <th>Heures</th>
+                            <th>Lundi</th>
+                            <th>Mardi</th>
+                            <th>Mercredi</th>
+                            <th>Jeudi</th>
+                            <th>Vendredi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- 8h -->
+                        <tr>
+                            <th>8h-9h</th>
+                            <td rowspan="2">Mise en page Web</td>
+                            <td></td>
+                            <td rowspan="2">Écriture et littérature</td>
+                            <td>Libre</td>
+                            <td rowspan="3">Création vidéo</td>
+                        </tr>
+                        <!-- 9h -->
+                        <tr>
+                            <th>9h-10h</th>
+                            <td rowspan="3">Mise en page Web</td>
+                            <td>Libre</td>
+                        </tr>
+                        <!-- 10h -->
+                        <tr>
+                            <th>10h-11h</th>
+                            <td rowspan="2">Création vidéo</td>
+                            <td rowspan="2">Entraînement musculaire</td>
+                            <td>Libre</td>
+                        </tr>
+                        <!-- 11h -->
+                        <tr>
+                            <th>11h-12h</th>
+                            <td>Libre</td>
+                        </tr>
+                        <!-- 12h -->
+                        <tr>
+                            <th>12h-13h</th>
+                            <td rowspan="2">Écriture et littérature</td>
+                            <td rowspan="2">Pause commune</td>
+                            <td>Libre</td>
+                            <td>Libre</td>
+                            <td>Libre</td>
+                        </tr>
+                        <!-- 13h -->
+                        <tr>
+                            <th>13h-14h</th>
+                        </tr>
+                        <!-- 14h -->
+                        <tr>
+                            <th>14h-15h</th>
+                            <td>Libre</td>
+                            <td rowspan="2">Animation et interactivité</td>
+                            <td rowspan="3">Animation et interactivité</td>
+                            <td rowspan="3">Conception graphique</td>
+                            <td rowspan="3">Conception graphique</td>
+                        </tr>
+                        <!-- 15h -->
+                        <tr>
+                            <th>15h-16h</th>
+                            <td rowspan="3">Anglais</td>
+                        </tr>
+                        <!-- 16h -->
+                        <tr>
+                            <th>16h-17h</th>
+                        </tr>
+                        <!-- 17h -->
+                        <tr>
+                            <th>17h-18h</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </div>
     </section>
+        </div>
+    </section>
+
    
     <section id="Articles">
         <div class="global">
@@ -120,15 +246,13 @@
                 </article>
             </section>
             
-
- 
     <section id="Galerie">
         <div class="global">
             <div class="nav-icon">
 
                 </a>
             </div>
-            <h2>Galerie</h2>
+            <h5>Galerie</h5>
         </div>
     </section>
 
@@ -138,7 +262,7 @@
 
                 </a>
             </div>
-            <h2>Vidéo</h2>
+            <h6>Vidéo</h6>
         </div>
     </section>
  
@@ -156,5 +280,13 @@
                </section>
         </div>
     </footer>
+
+    <section id="Galerie">
+        <div class="global">
+            <div class="nav-icon">
+
+                </a>
+            </div>
 </body>
 </html>
+    

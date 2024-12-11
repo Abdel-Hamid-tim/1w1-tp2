@@ -107,6 +107,9 @@ body {
 #Pied_de_page {
     background-color: hsl(210, 2%, 39%);
 }
+#Horizon {
+    background-color: rgb(17, 53, 233);
+}
  
 html {
     scroll-behavior: smooth;
@@ -244,3 +247,65 @@ html {
     width: 100%;
     height: auto;
 }
+
+.tableau{
+    border-collapse: collapse;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.tableau tr{}
+
+.tableau td,
+.tableau th{
+    border: 1px solid #dce70c;
+    padding: 7px;
+}
+/* 
+even : pair
+odd : impair
+*/
+.tableau tr:nth-of-type(even) {
+    background-color: #212121;
+}
+.tableau th {
+    color: #12e624;
+    font-weight: bold;
+}
+
+.tableau caption {
+    font-size: 2rem;
+    color: rgb(8, 40, 63);
+    font-weight : bold;
+    border : 1px solid #aaa;
+    padding : 10px;
+}
+
+
+.tableau thead {
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.tableau thead th {
+    transform : rotate(90deg);
+
+    padding : 20px 5px;
+}
+
+.tableau tbody{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+}
+
+.tableau tfoot{
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: aquamarine;
+}
+
+
+
+
+
+
+  
+
+
