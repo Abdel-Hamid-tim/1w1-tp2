@@ -57,52 +57,85 @@
              
                 </a>
             </div>
-            <h2>Inscription</h2>
-            <form  class="formulaire">
-                <fieldset><legend>Obligatoire</legend>    
-                <div>
-                    <label for="Moali">Nom</label>
-                    <input id="Moali" type="text" placeholder="Moali">
-                </div>
-                <div>
-                    <label for="Abdel-Hamid">Prenom</label>
-                    <input id="Abdel-Hamid" type="text" placeholder="Abdel-Hamid">
-                </div>
-                <div>
-                    <label for="courriel">Courriel</label>
-                    <input id="courriel" type="email" placeholder="Entrez votre courriel">
-                </div>
-            </fieldset>
-            <fieldset><legend>Adresse complète</legend>   
-                <div>
-                    <label for="Canada">Pays</label>
-                    <input id="Canada" type="text" placeholder="Canada">
-                </div>
-                <div>
-                    <label for="Québec">Province</label>
-                    <input id="Québec" type="text" placeholder="Québec">
-                </div>
-                <div>
-                    <label for="rue">Rue</label>
-                    <input id="rue" type="text" placeholder="Entrez votre adresse civique">
-                </div>
-            
-            </fieldset>
-            
-                </form>
-                
-        </div>
-    </section>
 
-    <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Tableau - TP2</title>
-</head>
-<body>
+            <section id="inscription">
+                <div class="global">
+                    <h2>Bienvenue chez Nike</h2>
+                    <p id="description">Inscrivez-vous pour rejoindre notre communauté sportive</p>
+                    <!--Début du formulaire-->
+                    <form class="formulaire">
+                        <!-- Informations personnelles -->
+                        <fieldset>
+                            <legend>Informations personnelles</legend>
+                            <div>
+                                <label for="nom">Nom</label>
+                                <input id="nom" type="text" placeholder="Entrez votre nom" required>
+                            </div>
+
+                            <div>
+                                <label for="prenom">Prénom</label>
+                                <input id="prenom" type="text" placeholder="Entrez votre prénom" required>
+                            </div>
+
+                            <div>
+                                <label for="courriel">Courriel</label>
+                                <input id="courriel" type="email" placeholder="Entrez votre courriel" required>
+
+                            </div>
+                        </fieldset>
+        
+                        <!-- Sexe -->
+                        <fieldset>
+                            <legend>Sexe</legend>
+                            <label>
+                                <input type="radio" name="sexe" value="homme" required> Homme
+                            </label>
+                            <label>
+                                <input type="radio" name="sexe" value="femme"> Femme
+                            </label>
+                        </fieldset>
+        
+                        <!-- Préférences -->
+                        <fieldset>
+                            <legend>Préférences</legend>
+                            <label>
+                                <input type="checkbox" name="preferences[]" value="nouvelles"> Recevoir les nouvelles
+                            </label>
+                            <label>
+                                <input type="checkbox" name="preferences[]" value="promotions"> Recevoir les promotions
+                            </label>
+                            <label>
+                                <input type="checkbox" name="preferences[]" value="event"> Être informé des événements
+                            </label>
+                        </fieldset>
+        
+                        <!-- Catégories sportives -->
+                        <label id="sport-category" for="category">Catégorie sportive préférée :</label>
+                        <select id="category" name="category" required>
+                            <option value="">-- Sélectionnez une catégorie --</option>
+                            <option value="running">Running</option>
+                            <option value="training">Training</option>
+                            <option value="basketball">Basketball</option>
+                            <option value="football">Football</option>
+                            <option value="lifestyle">Lifestyle</option>
+                        </select>
+        
+                        <!-- Bouton de réinitialisation -->
+                        <div id="reinitialiser">
+                            <button type="button" onclick="location.reload()">Réinitialiser</button>
+                        </div>
+        
+                        <!-- Soumettre -->
+                        <div id="submit">
+                            <button type="submit">S'inscrire</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            
+
+    
+   
 
     <section id="Tableau">
         <div class="global">
@@ -246,15 +279,47 @@
                 </article>
             </section>
             
-    <section id="Galerie">
-        <div class="global">
-            <div class="nav-icon">
-
-                </a>
+            <section id="Galerie">
+                <div class="global">
+                    <div class="nav-icon">
+            
+                    </a>
+                </div>
+                <h5>Galerie</h5>
+                <section class="Galerie">
+                    <article class="article">
+                        <figure class="article__Galerie">
+                            <img class="galerie-image" src="images/nike_ancienne paire.jpg" alt="nike_ancienne">
+                            <figcaption>Voici l'une des premières paires de Nike</figcaption>
+                        </figure>
+                    </article>
+                    <article class="article">
+                        <figure class="article__Galerie">
+                            <img class="galerie-image" src="images/Nike Air force 1.png" alt="Nike Air force">
+                            <figcaption>Voici la paire de Nike la plus vendue</figcaption>
+                        </figure>
+                    </article>
+                    <article class="article">
+                        <figure class="article__Galerie">
+                            <img class="galerie-image" src="images/Air Jordan Bred.jpeg" alt="Air Jordan Bred">
+                            <figcaption>Voici la paire de Basket la plus chère de Nike</figcaption>
+                        </figure>
+                    </article>
+                    <article class="article">
+                        <figure class="article__Galerie">
+                            <img class="galerie-image" src="images/Cr7_Nike.jpg" alt="Cr7_Nike">
+                            <figcaption>Paire personnaliser de Cristiano Ronaldo</figcaption>
+                        </figure>
+                    </article>
+                    <article class="article">
+                        <figure class="article__Galerie">
+                            <img class="galerie-image" src="images/Nike_Nadal.avif" alt="Nike_Nadal">
+                            <figcaption>Paire personnaliser de Rafael Nadal</figcaption>
+                        </figure>
+                    </article>
+                </section>
             </div>
-            <h5>Galerie</h5>
-        </div>
-    </section>
+            </section>
 
     <section id="Vidéo">
         <div class="global">
@@ -263,6 +328,28 @@
                 </a>
             </div>
             <h6>Vidéo</h6>
+            <section  class="global">
+                <iframe 
+                    width="300" 
+                    height="170" 
+                    src="https://www.youtube.com/embed/bfLEcKIHziQ?si=YdtqFBVHYhzLuG_O"
+                    title="I Am the Pressure" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+                <iframe 
+                    width="300" 
+                    height="170" 
+                    src="https://www.youtube.com/embed/X0xbNUMZCvk?si=A_Co8ob0hZJiQR9S" 
+                    title="Greatness. It Only Takes Everything" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </section>
         </div>
     </section>
  
@@ -274,19 +361,58 @@
             </div>
             <h7>Pied de page</h7>
             <div class="hero__page">
-                <section id="Pied de page"> 
-                 <div class="hero__page">
-            <p class="hero__ page">Département de techniques d'intégration multimédia- Collège Maisonneuve- 3800 Sherbrooke Est, Montréal</p>
-               </section>
-        </div>
-    </footer>
-
-    <section id="Galerie">
-        <div class="global">
-            <div class="nav-icon">
-
-                </a>
+                <section id="Pied de page">
+                    <div class="hero__page">
+                        <p class="hero__page">Département de techniques d'intégration multimédia - Collège Maisonneuve - 3800 Sherbrooke Est, Montréal</p>
+                    </div>
+                </section>
             </div>
-</body>
-</html>
+            
+            <footer id="pied" class="pied">
+                <div class="global">
+                    <h2>Info</h2>
+                    <div class="footer-container">
+                        <!-- Adresse du Collège -->
+                        <div class="footer-section address">
+                            <h3>Collège de Maisonneuve</h3>
+                            <p>3800 rue Sherbrooke Est, Montréal, QC H1X 2A2</p>
+                        </div>
+            
+                        <!-- Liens importants -->
+                        <div class="footer-section links">
+                            <h3>Liens importants</h3>
+                            <ul>
+                                <li><a href="#"><img src="images/lien-image.png" alt="Lien image"></a></li>
+                                <li><a href="#">Programmes d'études</a></li>
+                                <li><a href="#">Admission</a></li>
+                                <li><a href="#">Événements</a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Description du département -->
+                        <div class="footer-section départment">
+                            <h3>Département du Collège</h3>
+                            <p>Le Collège de Maisonneuve offre une large gamme de programmes d'études dans différents domaines pour préparer les étudiants à des carrières réussies dans un environnement innovant et dynamique.</p>
+                        </div>
+            
+                        <!-- Réseaux sociaux -->
+                        <div class="footer-section média">
+                            <h3>Suivez-nous</h3>
+                            <ul>
+                                <li><a href="#"><img src="images/facebook-logo-.webp" alt="facebook-logo-"></a></li>
+                                <li><a href="#"><img src="images/snapchat-logo.png" alt="snapchat-logo"></a></li>
+                                <li><a href="#"><img src="images/instagram-logo.webp" alt="instagram-logo"></a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Avis de confidentialité -->
+                        <div class="footer-section privacy">
+                            <a href="#">Avis de confidentialité | Privacy Notice</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+            </body>
+            </html>
     

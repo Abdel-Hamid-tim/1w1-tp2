@@ -107,9 +107,7 @@ body {
 #Pied_de_page {
     background-color: hsl(210, 2%, 39%);
 }
-#Horizon {
-    background-color: rgb(17, 53, 233);
-}
+
  
 html {
     scroll-behavior: smooth;
@@ -300,6 +298,195 @@ odd : impair
 font-family: Georgia, 'Times New Roman', Times, serif;
 background-color: aquamarine;
 }
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article__Galerie {
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.galerie-image {
+    width: 100px; /* ou une autre valeur de votre choix */
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+figcaption {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+/* //////////////////////////////////////////// police de caractères */
+
+
+.eater-regular {
+    font-family: "Eater", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  /*Début de Inscription*/
+ 
+/*Formulaire (Cadre pour tout les formulaires*/
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+    width: 500px;
+}
+/*Fin de Formulaire*/
+/*Début de Obligatoire*/
+.Personnel {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+/*Fin de Obligatoire*/
+/*Début de Sexe*/
+.Sexe/*Le truc autour d'homme et femme*/ {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+.sexe/*Homme et femme*/ {
+    display: flex;
+    justify-content: space-between;
+}
+/*Fin de Sexe*/
+
+/*Début de Preferences*/
+.Preferences {
+    width: 500px;
+}
+
+.preferences {
+    display: flex;
+    gap: 15px;
+}
+/*Fin de Preferences*/
+
+/*Début de Région*/
+#région {
+    margin-bottom: 30px;
+}
+/*Fin de Région*/
+/*Fin de Inscription*/
+
+/* Footer */
+footer {
+    background-color: #333; /* background color  pied de page */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+}
+
+/* Container global du footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Sections du footer */
+.footer-section {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center; /* Centrer le contenu de chaque section */
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section des médias sociaux */
+.footer-section .social-media ul {
+    display: flex;
+    gap: 10px;
+}
+
+/* Icônes des réseaux sociaux */
+.footer-section .social-media ul li img {
+    width: 20px;
+    height: 20px; 
+}
+
+/* Section vie privée */
+.footer-section .privacy a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-section .privacy a:hover {
+    text-decoration: underline;
+}
+
+/* Pied de page */
+#Pied_de_page {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.hero__page {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+
+
 
 
 
